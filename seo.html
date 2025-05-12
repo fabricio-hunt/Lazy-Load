@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo Lazy Load</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Exemplo de Lazy Load</h1>
+    <p>Scroll para ver as imagens carregarem apenas quando necessário</p>
+  </header>
+
+  <div class="content">
+    <h2>Introdução</h2>
+    <p>
+      O Lazy Load melhora o carregamento da página ao carregar as imagens somente quando você se aproxima delas.
+    </p>
+
+    <h2>Naruto Uzumaki</h2>
+    <img 
+      src="https://preview.redd.it/today-is-october-10-happy-birthday-naruto-uzumaki-btw-v0-ov6g99si9btb1.jpg?width=640&crop=smart&auto=webp&s=e8c81409ab8c543e3ae35ede436baef1641f13bb" 
+      alt="Imagem de exemplo 1" 
+      loading="lazy" 
+      width="800" 
+      height="400"
+    >
+
+    <h2>Texto Intermediário</h2>
+    <p>
+      Este texto simula um conteúdo maior para que você tenha que rolar a página e ativar o Lazy Load das próximas imagens.
+    </p>
+
+    <h2>Sasuke Uchiha</h2>
+    <img 
+      src="https://www.cartonionline.com/wordpress/wp-content/uploads/2023/02/sasuke_03.png" 
+      alt="Imagem de exemplo 2" 
+      loading="lazy" 
+      width="800" 
+      height="400"
+    >
+
+    <h2>Kakashi Hatake</h2>
+    <img 
+      src="https://i.pinimg.com/736x/62/87/5f/62875fd3908ba13f6013c41a8bd7335e.jpg" 
+      alt="Imagem de exemplo 3" 
+      loading="lazy" 
+      width="800" 
+      height="400"
+    >
+
+  </div>
+
+  <footer>
+    <p>© 2025 - Exemplo de Página com Lazy Load</p>
+  </footer>
+
+</body>
+</html>
